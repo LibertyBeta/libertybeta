@@ -4,6 +4,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <!-- Compiled and minified JavaScript -->
@@ -33,7 +34,6 @@
                   <li><a href="#languages">Languages</a></li>
                   <li><a href="#frameworks">Frameworks</a></li>
                   <li><a href="#education">Education</a></li>
-                  <li><a href="#hobbies">Intialization</a></li>
                 </ul>
               </div>
             </div>
@@ -41,29 +41,54 @@
             <div class="col s12 offset-m3 m9 offset-l2 l10">
               <div id="introduction" class="section scrollspy">
                 <h1> Rainer Paskiewicz</h1>
-                <h4> Or why I put this togeather in a few hours</h4>
-                <p>Hi. Hello. Welcome. Greetings. Etc, etc, etc, etc. </p>
-                <p>On this page you will learn about me, what I do, what projects I've worked on, and what you can expect if you hire me. I could write more, but you know what? Lets just have this site tell you about me. </p>
+                <h6> Or why I put this togeather in a few hours</h6>
+                <p>Hi. Hello. Welcome. Greetings. Etc, etc, etc, etc. Welcome to my little resume webpage. Its not super long, or overly techincal. But it does give you a quick glimpse into who I am professional as well as the kind of work I do. </p>
               </div>
 
               <div id="experience" class="section scrollspy">
-                For the past five years I've been in the trenches, doing the good work and doing may best to bring my clients ideas to furition.
-                <h4 class="card-panel blue darken-1 white-text"> Employment History</h4>
+                
+                <h5 class="card-panel blue darken-1 white-text"> Employment History</h5>
                 <ul>
                   <li>
                     <h5>Developer, DCPHP L.L.C</h5>
-                    <p> Since 2011 I have been a developer with DCPHP. In that time I have grown from a lowly data entry clerk to a full fledged Developer with all the responsibilites that intails. </p>
+                    <div class="chip">
+                        2011 -> Right Now
+                    </div>
+                    <p>While working at DCPHP I have grown from basic data entry and QA member to a Lead Developer with all the responsibilities and the skills the position entails. Thechallenge of meeting the needs of a diverse and multifaceted client base has driven me to broaden not only my technical skills, but my understand of client's needs and wants.</p>
+                    <strong>Accomplishments</strong>
+
+                    <ul class="collection">
+                        <li class="collection-item">Shepherded the company's in house software through several major language and library updates.</li>
+                        <li class="collection-item">Expanded company's development base from a purely LAMP structure to include more modern development languages and paradigms.</li>
+                        <li class="collection-item">Introduced, developed, and deployed a client license control library for use in company projects.</li>
+                        <li class="collection-item">Expand my personal understanding of development languages to include those still under development(GO, etc).</li>
+                    </ul>
+
+
+                    <strong>Responsibilities</strong>
+                    <ul class="collection">
+                        <li class="collection-item">Development and design of Applications to fit client's needs, using variouscombined development tools.</li>
+                        <li class="collection-item">Administration of Linux and Windows based servers.</li>
+                        <li class="collection-item">Management of various code revision solutions(Git,Subversion) on multiple platforms.</li>
+                        <li class="collection-item">Deploy and Manage LAMP environments to both cloud based and local hardware.</li>
+                        <li class="collection-item">Database Structure design, including embed business logic.</li>
+                        <li class="collection-item">API design and Management</li>
+                    </ul>
                   </li>
                 </ul>
               </div>
 
               <div id="languages" class="section scrollspy">
-                <h4 class="card-panel blue darken-1 white-text"> Languages </h4>
+                <h5 class="card-panel blue darken-1 white-text"> Languages </h5>
                 <p> In my time as a developer I've picked up a wide varity of langauges. Some times it seems as if each new project I'm asigned to requires learning a new langauges or design paradigm. Bellow are a short list of the langauges I've come across, and what I think about them. </p>
-                <ul class="collapsible popout" data-collapsible="accordion">
+                <ul class="collapsible" data-collapsible="accordion">
                   <li>
                     <div class="collapsible-header">PHP</div>
                     <div class="collapsible-body"><p>PHP, some people love it. A lot of people hate it. My opinion falls someplace in between. PHP runs a lot of the net. You can't go very far without tripping over a site that has its backbone rooted in this wide spread langauge. But its not without its flaws. My expeience allows me to easily anticipate this issues, and guide the project around them. </p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">Python</div>
+                    <div class="collapsible-body"><p>The other scripting langauge turned multipurpose tool, Python is simple, easy to use, and extremely powerful. My got to for quick scripts that have to talk to hardware, its got one of the more different syntax schemes. </p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Node.JS</div>
@@ -71,87 +96,118 @@
                   </li>
                   <li>
                     <div class="collapsible-header">HMTL</div>
-                    <div class="collapsible-body"><p>What can I say about HTML that hasn't already been said. </p></div>
+                    <div class="collapsible-body"><p>What can I say about HTML that hasn't already been said. Its the markup that formats the net. But its become so much more than that. With HTML5 we've finally got a langauge that starts to tie together all the other parts of front end webdevelopemnt. And those new input types are just so, so, helpfull.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Javascript</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Javascript gets a bad wrap. Some of it deserved, most of it not. Javascript lets you do amazing things, but it doesn't give you the safety net of strong types, or easy syntax that a compiled lanagues would. But for modifying a DOM elements there is still no better way to do it tan with javascript. Or, at least with one of its many, MANY libraries. And ES6 is going to be great, once its widely supported. </p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">CSS</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Cascading Style Sheets are alot like javascript in that it gets a bad wrap. But in this case, it some what deserverd. Support for features can be spotty, the syntax is unweldy, and even when you get things right a small change can break things. But in my time as a developer I've come to respect CSS. It can do some amazing things, when user properly.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">SASS</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Writing CSS is a pain. Using CSS is not. So that's where SASS comes in. A pre-processor or sorts it allows a developer to write an amazing array of styles without having to repeat themselves over and over again. By abstracting the busy work of CSS to variables, functions, and inlcuded libraries, it takes the hassle out of creating beautiful CSS. And the hassle out of having to change it later. </p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">SQL</div>
+                    <div class="collapsible-body"><p>The great granddaddy of the relational database languages. Regardless of flavor(MySQL, MSSQL, or ProgreSQL), its been the gold standard for relation database since the 70s. And with good reason. It allows for data to be manipulated and standardized quickly. However, it does fall vicitem to issues of complexity from time to time.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Mongodb</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Monog was the first not relational database I came across as a web developer. And you know what, I feel in love. The idea of handling datapoints as Documents made great sense when a relational database seemed overkill. And the easy integration with Node.JS and Meteor.JS didn't hurt things ether. </p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">C++</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>C++ wasn't the first lanague I learend. Its wasn't even the second. It wasn't until will into my college carrier that I was introduce to C++. However, I still find myself going back to C++ to explain issues of Object Oriented Programing and class structure. </p></div>
                   </li>
                 </ul>
               </div>
 
               <div id="frameworks" class="section scrollspy">
-                <h4  class="card-panel blue darken-1 white-text"> Frameworks</h4>
+                <h5  class="card-panel blue darken-1 white-text"> Frameworks</h5>
                 <p> Langauges are great. However, you can only get so far on your own. Frameworks allow developers to share a common code base. They allow for us share the burdeon of common tasks that aren't covered by our lanagues. Sometimes they just make handling content easier. Somtimes they take care of almost all the heavy lifting, leaving you to impliment the novel functionality that really matters. Bellow is a short list of those that I've worked with, and a short story about my time with them. </p>
-                <ul class="collapsible popout" data-collapsible="accordion">
+                <ul class="collapsible" data-collapsible="accordion">
                   <li>
                     <div class="collapsible-header">Symphony</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>The biggest, and perhaps the most wide spread of the PHP frameworks. Its heavy, but it brings a lot to the table that gets the busy work of setting up site/api/app out of the way so that the developer can focus on functionality. There is a litle bloat in the code base, but that's not really so strange for a project of such a scope.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Silex</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Symphony's baby brother. If Symphony is to heavy, but I'm still working with Dev's who are used to living in a Symphony world, Silex is my goto microframework. Same routing language, similiar database management, but without the overhead that comes with a full fledged Symphony install. Also, you can move code up into a full Symphony project without to much refactoring.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Wordpress</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>The most popular CMS out there at the moment. Countless blogs, broucher websites, and socail groups run on wordpress. This has lead the code to become a bit bloated, and made it a near constant target for attack. But, its easy to set up, quick to administer, and simple enough that most end users can handle running it. </p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Bootstrap</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Twitter's CSS/JS framework. Made popular as the first framework to really support modern responsive design. However, its rise to frame has caused sites and apps build using Boostrap to have a very "Bootstrappy" feel to them. This can be overcome with careful design and modification of the underlying SASS, but you can't beat the speed for prototyping. </p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Angular.JS</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>Google's monolithic Javascript library. Based off the ideas of letting the data speak for itself, angular runs a wide gambit of very powerful web apps. Personally I like the fact that data is not longer a second class citizen when comes to design when working with angular. Best suited for single pages, its my front end of choice currently.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Meteor.js</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>The new kid on the block, but rappidly gaining fans in the MEAN development world. The quick development lifecycle, combined with the "install and go" setup has made Meteor one of the fastest growing stacks in recent memory. While there are some questions about issues of scale, but only time will tell if these are founded. </p></div>
                   </li>
                   <li>
-                    <div class="collapsible-header">Danjo</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header">Django</div>
+                    <div class="collapsible-body"><p>The more popular web framework for python, I've built a few personal projects using django. Its powerful, but also a little weighty. It brings a lot to the party though, and would still be my suggestion if you want a framework for a web project backed by python.</p></div>
                   </li>
                   <li>
                     <div class="collapsible-header">Flask</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header">Meteor.js</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body"><p>The best micorframework for Python. If Django is Symphony, this is Silex. Small, light wieght, an simple to use, Flask is   a great framework for quick projects or those with a limited scope. </p></div>
                   </li>
                 </ul>
               </div>
 
               <div id="education" class="section scrollspy">
-                <h4 class="card-panel blue darken-1 white-text">Education</h4>
-                <p>Strip steak corned beef drumstick pork belly alcatra beef ribs short loin. Jowl pancetta shank, sausage tongue meatloaf kielbasa flank leberkas swine shoulder cupim. Ribeye doner leberkas pork loin short ribs picanha. Pork turkey bresaola kevin. Cow brisket doner tail short loin boudin. Fatback alcatra capicola, cupim bacon pork loin strip steak beef frankfurter venison drumstick turducken. Jowl doner rump, kevin jerky flank turkey swine sirloin.</p>
+                <h5 class="card-panel blue darken-1 white-text">Education</h5>
+                <div class="row">
+                    <div class="col s12 m10 offset-m1">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="images/chopped-seal.png">
+                            </div>
+                            <div class="card-content">
+                                <h5>University of Connecticut College of Liberal Arts</h5>
+                                <p>Bachelor of Arts: English 2007 - 2009</p>
+                            </div>
+                      </div>
+                    </div>
+                </div>
               </div>
 
-              <div id="hobbies" class="section scrollspy">
-                <h4 class="card-panel blue darken-1 white-text">Hobbies</h4>
-                <p>Strip steak corned beef drumstick pork belly alcatra beef ribs short loin. Jowl pancetta shank, sausage tongue meatloaf kielbasa flank leberkas swine shoulder cupim. Ribeye doner leberkas pork loin short ribs picanha. Pork turkey bresaola kevin. Cow brisket doner tail short loin boudin. Fatback alcatra capicola, cupim bacon pork loin strip steak beef frankfurter venison drumstick turducken. Jowl doner rump, kevin jerky flank turkey swine sirloin.</p>
-              </div>
-            </div>
+
 
           </div>
         </div>
       </main>
+        <footer class="page-footer blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Thank you!</h5>
+                        <p class="grey-text text-lighten-4">You scrolled all the way to the bottom of my page. That means you ether really like what you saw, or accidentally held down the page down buton. Ether way, thank you.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Contact Me</h5>
+                        <ul>
+                            <li><spanc class="grey-text text-lighten-3"> Email: </span><a class="grey-text text-lighten-3" href="mailto:Email: rainer.paskiewicz@gmail.com?subject=Job">rainer.paskiewicz@gmail.com</a></li>
+                            <li><spanc class="grey-text text-lighten-3">github:</span> <a class="grey-text text-lighten-3" href="https://github.com/LibertyBeta"> LibertyBeta </a></li>
+                            <li><spanc class="grey-text text-lighten-3">phone: (203)533-9005</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2015 Copyright Text
+                </div>
+            </div>
+        </footer>
     </body>
   </html>

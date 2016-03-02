@@ -16,6 +16,29 @@
       });
       </script>
 
+      <style>
+        h1.imaged img{
+          vertical-align: middle;
+        }
+        .section:first-child{
+          /*background-color:pink;*/
+          padding-top: 0rem;
+        }
+
+        @media only screen and (max-width: 750px) {
+          .toc-wrapper{
+            padding-top: 2rem
+          }
+        }
+        @media only screen and (min-width: 751px){
+          .toc-wrapper{
+            padding-top: 0.5rem
+          }
+        }
+        div.topper{
+          backgound-color:pink;
+        }
+      </style>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="theme-color" content="#ffffff">
@@ -23,21 +46,24 @@
     </head>
 
     <body>
+      <!-- <nav class="blue"> -->
+      <!-- </nav> -->
       <main>
 
         <!-- Hey, you looked at my source code, good job you! First off, if you've noticed anything wrong with this site, please feel free to email me at Rainer.Paskiewicz@gmail.com. I'll get right on fixing it and you'll get a heartfelt thankyou. This site is hosted by GitHubs amazing GitHub Pages feature. If you want to know more, you can find out at the like right here:  https://pages.github.com/ The CSS/JS framework you see litterting the site with style is known at Materializecss. Its a great library that gives you Google's Material Design without a lot of overhead or having to use Polymer(Which isn't really done yet.). You can find out more about them here: http://materializecss.com/ Finally, a BIG thank you to the guys and gals over at Atom.io. Not because they helped in any way, but because their editor helps me every day get my work done faster.  -->
         <div class="container">
           <div class="row">
             <div class="col hide-on-small-only m3 l2">
-              <div class="toc-wrapper pinned" style="top: 0px;">
-                <ul class="section table-of-contents">
-                  <li><a href="#introduction">Introduction</a></li>
-                  <li><a href="#experience">Expereince</a></li>
-                  <li><a href="#languages">Languages</a></li>
-                  <li><a href="#frameworks">Frameworks</a></li>
-                  <li><a href="#education">Education</a></li>
-                </ul>
-              </div>
+                <div class="toc-wrapper pinned">
+                  <img class="responsive-img circle" src="images/logo.svg">
+                  <ul class="section table-of-contents card">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#experience">Expereince</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#frameworks">Frameworks</a></li>
+                    <li><a href="#education">Education</a></li>
+                  </ul>
+                </div>
             </div>
 
             <div class="col s12 offset-m3 m9 offset-l2 l10">
@@ -45,7 +71,7 @@
                 <!-- <div class="row "> -->
                     <!-- <div class="col s12 m1"> <img class="responsive-img" src="images/logo.svg"></div> -->
                     <!-- <div class="col s12 m10"> -->
-                        <h1>Rainer Paskiewicz</h1>
+                        <h1 class="imaged">Rainer Paskiewicz </h1>
                     <!-- </div> -->
                 <!-- </div> -->
                 <h6> Or why I put this together in a few hours</h6>

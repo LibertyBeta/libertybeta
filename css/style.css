@@ -53,3 +53,25 @@ li.active{
   /*background-color: pink;*/
 
 }
+
+nav, .waterfall{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    display: block;
+    box-shadow: none;
+}
+
+.waterfall{
+  padding-top: 56px;
+  padding-bottom: 1rem;
+}
+
+nav.fixed.active{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}

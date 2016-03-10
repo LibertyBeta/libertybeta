@@ -68,10 +68,33 @@ nav.fixed {
 }
 
 .waterfall{
-  padding-top: 56px;
+  padding-top: 3.2rem;
   padding-bottom: 1rem;
 }
 
 nav.fixed.active{
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+nav h4{
+  margin-top: 0.8rem;
+}
+
+.waterfall span.contact-info{
+  padding-top: 0.85rem;
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+
+.waterfall span.contact-info:first-of-type{
+  padding-top: 0.3rem;
+}
+
+.waterfall span.contact-info .material-icons{
+  float:left;
+  line-height: 1.3rem;
+  font-size: 1.3rem !important;
+  padding-right: 4px;
 }

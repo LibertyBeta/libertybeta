@@ -15,75 +15,26 @@
         $('.scrollspy').scrollSpy();
       });
       </script>
-
-      <style>
-        h1.imaged img{
-          vertical-align: middle;
-        }
-        .section:first-child{
-          /*background-color:pink;*/
-          padding-top: 0rem;
-        }
-
-        @media only screen and (max-width: 750px) {
-          .toc-wrapper{
-            padding-top: 2rem
-          }
-        }
-        @media only screen and (min-width: 751px){
-          .toc-wrapper{
-            padding-top: 0.5rem
-          }
-        }
-        .table-of-contents a.active{
-          border-left: 2px solid #1E88E5 !important;
-        }
-
-        .betterCarded .ul{
-          border-left: none !important;
-          border-right: none !important;
-        }
-
-        .betterCarded .collapsible{
-          box-shadow: none !important;
-          border-left: none !important;
-          border-right: none !important;
-          border-top: none !important;
-        }
-        .betterCarded .collapsible li:first-child{
-          border-top:  1px solid #ddd;
-        }
-        .betterCarded .collapsible li{
-          box-shadow:
-            0 2px 5px 0 rgba(0,0,0,0.16),
-            0 2px 10px 0 rgba(0,0,0,0.12);
-          border-left:  1px solid #ddd;
-          border-right:  1px solid #ddd;
-        }
-
-        li.active{
-          box-shadow:
-            0 2px 5px 0 rgba(0,0,0,0.16),
-            0 2px 10px 0 rgba(0,0,0,0.12);
-          /*border-bottom: 1px solid #ddd;*/
-          border-top: 1px solid #ddd;
-          margin-top:1rem;
-          margin-bottom:1rem;
-          /*background-color: pink;*/
-
-        }
-      </style>
+      <!-- This is our loca style sheet.  -->
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/scripts.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="theme-color" content="#ffffff">
       <title> Rainer Paskiewicz, Developer, Writer, and Occasional Blacksmith</title>
     </head>
-
+    <nav class="blue hide-on-med-and-up fixed">
+        <h4 class="imaged">Rainer Paskiewicz </h4>
+    </nav>
     <body>
-      <!-- <nav class="blue"> -->
-      <!-- </nav> -->
-      <main>
 
+      <main>
+        <div class="waterfall blue white-text hide-on-med-and-up">
+          <h5>Writer</h5>
+          <h5>Developer</h5>
+          <h5>Occassional Blacksmith</h5>
+          <p>Hi. Hello. Welcome. Greetings. Etc, etc, etc, etc. Welcome to my little resume webpage. Its not super long, or overly technical. But it does give you a quick glimpse into who I am professionally,  as well as the kind of work I do. </p>
+        </div>
         <!-- Hey, you looked at my source code, good job you! First off, if you've noticed anything wrong with this site, please feel free to email me at Rainer.Paskiewicz@gmail.com. I'll get right on fixing it and you'll get a heartfelt thankyou. This site is hosted by GitHubs amazing GitHub Pages feature. If you want to know more, you can find out at the like right here:  https://pages.github.com/ The CSS/JS framework you see litterting the site with style is known at Materializecss. Its a great library that gives you Google's Material Design without a lot of overhead or having to use Polymer(Which isn't really done yet.). You can find out more about them here: http://materializecss.com/ Finally, a BIG thank you to the guys and gals over at Atom.io. Not because they helped in any way, but because their editor helps me every day get my work done faster.  -->
         <div class="container">
           <div class="row">
@@ -101,11 +52,11 @@
             </div>
 
             <div class="col s12 offset-m3 m9 offset-l2 l10">
-              <div id="introduction" class="section scrollspy">
+              <div id="introduction" class="section scrollspy hide-on-small-only">
                 <!-- <div class="row "> -->
                     <!-- <div class="col s12 m1"> <img class="responsive-img" src="images/logo.svg"></div> -->
                     <!-- <div class="col s12 m10"> -->
-                        <h1 class="imaged">Rainer Paskiewicz </h1>
+                        <h1 class="imaged ">Rainer Paskiewicz </h1>
                     <!-- </div> -->
                 <!-- </div> -->
                 <h6> Or why I put this together in a few hours</h6>

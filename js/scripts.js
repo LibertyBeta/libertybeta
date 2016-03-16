@@ -3,7 +3,7 @@ var credits = [
   "Welcome.",
   "These are the Credits.",
   "To Exit, Click anywhere.",
-  "First, I would like to thank the fine folks over at MaterializsCSS.",
+  "First, I would like to thank the fine folks over at MaterializeCSS.",
   "They were a massive help.",
   "Also, a thank you to the a100 for making me add this feature.",
   "Its totally awesome and neat.",

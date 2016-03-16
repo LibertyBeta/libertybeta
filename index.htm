@@ -9,6 +9,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
 
       <script>
       $(document).ready(function(){
@@ -31,7 +32,11 @@
         <h4 class="imaged">Rainer Paskiewicz </h4>
     </nav>
     <body>
-
+      <div id="credits" class="hidden">
+        <div class="content">
+          <span id="credits-message" class="message"></span><span class="typed-cursor">_</span>
+        </div>
+      </div>
       <main>
         <div class="waterfall blue white-text hide-on-med-and-up">
           <h5>Writer</h5>
@@ -40,10 +45,6 @@
           <span class="contact-info"><a class="white-text" href="mailto:Email: rainer.paskiewicz@gmail.com?subject=Job"> <i class="small material-icons">email</i>rainer.paskiewicz@gmail.com</a></span>
           <span class="contact-info"><i class="small material-icons">phone</i><a class="white-text" href="tel:12035339005"> (203)533-9005</a></span>
           <p>Hi. Hello. Welcome. Greetings. Etc. You have landed on my little webpage. Here you'll get a glimpse of my past, my opinions on the languages and frameworks I've worked in, and find ways to contact me. </p>
-
-
-
-          
         </div>
         <!-- Hey, you looked at my source code, good job you! First off, if you've noticed anything wrong with this site, please feel free to email me at Rainer.Paskiewicz@gmail.com. I'll get right on fixing it and you'll get a heartfelt thankyou. This site is hosted by GitHubs amazing GitHub Pages feature. If you want to know more, you can find out at the like right here:  https://pages.github.com/ The CSS/JS framework you see litterting the site with style is known at Materializecss. Its a great library that gives you Google's Material Design without a lot of overhead or having to use Polymer(Which isn't really done yet.). You can find out more about them here: http://materializecss.com/ Finally, a BIG thank you to the guys and gals over at Atom.io. Not because they helped in any way, but because their editor helps me every day get my work done faster.  -->
         <div class="container">
@@ -194,23 +195,16 @@
 
               <div id="education" class="section scrollspy">
                 <h5 class="card-panel blue darken-1 white-text">Education</h5>
-                <!-- <div class="row"> -->
-                    <!-- <div class="col s12 m10 offset-m1"> -->
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/chopped-seal.png">
-                            </div>
-                            <div class="card-content">
-                                <h5>University of Connecticut College of Liberal Arts</h5>
-                                <p>Bachelor of Arts: English 2010</p>
-                            </div>
-                      </div>
-                    <!-- </div> -->
-                <!-- </div> -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/chopped-seal.png">
+                        </div>
+                        <div class="card-content">
+                            <h5>University of Connecticut College of Liberal Arts</h5>
+                            <p>Bachelor of Arts: English 2010</p>
+                        </div>
+                  </div>
               </div>
-
-
-
           </div>
         </div>
       </main>
@@ -232,7 +226,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <div class="container">
+                <div class="container" onClick="playCredits()">
                     © 2015 Copyright Rainer Paskiewicz
                 </div>
             </div>

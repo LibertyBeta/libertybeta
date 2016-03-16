@@ -6,12 +6,12 @@ var credits = [
   "First, I would like to thank the fine folks over at MaterializsCSS.",
   "They were a massive help.",
   "Also, a thank you to the a100 for making me add this feature.",
-  "Its totally awesome and neat."
+  "Its totally awesome and neat.",
+  "And thank you to my wife for putting up with me.",
+  "And the Dogs. They are WAY better for debugging than ducks."
 ];
 var timeouts = [];
 var line = 0;
-var sample = "This is a test statement";
-var sampleWords = sample.split('');
 var creditsContent;
 var creditDiv;
 
@@ -26,11 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var nav = document.getElementsByTagName('nav')[0];
   var shadowMoment = totalWaterfallHieght * 0.90;
 
-
   if(waterfallDisplay.getBoundingClientRect.bottom <= 0 ){
     nav.classList.add("active");
   }
-
 
   window.onscroll = function waterfallHandler(){
     if(waterfallDisplay.getBoundingClientRect().bottom <= 0 ){
@@ -46,74 +44,45 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  function animateString(string, target){
-    var words = string.split(' ');
-
-    setTimeout(function () {
-
-        typeWord();
-    }, 1000);
-    for (var word in words) {
-      if (object.hasOwnProperty(word)) {
-        var characters = word.split('');
-
-      }
-    }
-  };
-
-
-
 });
 
-
 function typeParagraph(symbols){
-
   var timeoutElement = setTimeout(function (symbols) {
-      // typeWord(symbols[0].splice(''));
-      // console.log("Symbols being types are"  + symbols[0])
-      creditsContent.innerHTML = creditsContent.innerHTML + symbols[0];
-      // console.log(timeouts);
-      console.log(symbols[0]);
-      symbols.shift();
-      if(symbols.length > 0){
-        // console.log("symbols longer!");
+      creditsContent.innerHTML = creditsContent.innerHTML + symbols.shift();
+      if(symbols.length > 0 && creditDiv.classList.contains("hidden") === false){
         typeParagraph(symbols);
       } else {
         typeLine();
         return true;
       }
-  }, 100, symbols);
+  }, 90, symbols);
   timeouts.push(timeoutElement);
 };
 
 function typeLine() {
   var timerId = setTimeout(function () {
-    console.log("Line to type is " + credits[line]);
     line++;
-    if(credits.length >= line){
+    if(credits.length >= line && creditDiv.classList.contains("hidden") === false){
       creditsContent.innerHTML = creditsContent.innerHTML + '<br/>';
       typeParagraph(credits[line].split(''));;
     } else {
       line = 0;
       return true;
     }
-
-  }, 500);
+  }, 600);
   timeouts.push(timerId);
 };
 
 function playCredits() {
+  line = 0;
   creditsContent.innerHTML = '';
   creditDiv.classList.remove("hidden");
   typeLine();
-}
+};
 
 function killCredits() {
-  console.log("killing credits");
   creditDiv.classList.add("hidden");
-  console.log(timeouts);
-  for (var timer in timeouts) {
-    console.log(timer);
-    window.clearTimeout(timer);
-  }
-}
+  do {
+    window.clearTimeout(timeouts.shift());
+  } while (timeouts.length != 0);
+};

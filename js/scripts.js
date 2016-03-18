@@ -5,8 +5,8 @@ var credits = [
   "To Exit, Click anywhere.",
   "First, I would like to thank the fine folks over at MaterializeCSS.",
   "They were a massive help.",
-  "Also, a thank you to the a100 for making me add this feature.",
-  "Its totally awesome and neat.",
+  "Also, a thank you to the A100 for making me add this feature.",
+  "It's totally awesome and neat.",
   "And thank you to my wife for putting up with me.",
   "And the Dogs. They are WAY better for debugging than ducks."
 ];

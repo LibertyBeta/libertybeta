@@ -1,14 +1,14 @@
 var credits = [
   "Hello",
   "Welcome.",
-  "These are the Credits.",
+  "These are the CREDITS.",
   "To Exit, Click anywhere.",
   "First, I would like to thank the fine folks over at MaterializeCSS.",
   "They were a massive help.",
   "Also, a thank you to the A100 for making me add this feature.",
   "It's totally awesome and neat.",
   "And thank you to my wife for putting up with me.",
-  "And the Dogs. They are WAY better for debugging than ducks."
+  "And the dogs. They are WAY better for debugging than ducks."
 ];
 var timeouts = [];
 var line = 0;
